@@ -1,0 +1,77 @@
+html {
+  margin: 0;
+  padding: 0;
+  /* set full page gradient */
+  min-height: 100%;
+}
+body {
+  background-attachment: fixed;
+  background-size: cover;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#008080+0,61f198+100 */
+  background: #077f83; /* Old browsers */
+  background-image: -moz-linear-gradient(-45deg, #077f83 0%, #031e50 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #077f83 0%, #031e50 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background-image: linear-gradient(105deg, #077f83 0%, #031e50 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#077f83', endColorstr='#031e50',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.spinner-border {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  margin-bottom: 0px;
+  border-right-color: #57d5ad !important;
+  border-bottom: 2.5px solid #00f1f3 !important;
+  width: 4rem !important;
+  height: 4rem !important;
+}
+
+.appHeader h1 {
+  margin: auto;
+  text-align: center;
+  font-size: 5rem;
+  color: #a6f6ad;
+  font-family: "Monoton", cursive;
+}
+
+.appHeader .searchBar {
+  width: 30vw;
+}
+.appHeader .searchBar .input-group .form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #a6f6ad !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 255, 22, 0.25) !important;
+}
+@media only screen and (max-width: 961px) {
+  .appHeader > .searchBar {
+    width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .appHeader h1 {
+    font-size: 10vw;
+  }
+  .appHeader .searchBar {
+    width: 70vw;
+  }
+}
+
+.cardList {
+  padding: 5px 0 5px 0;
+}
+.cardItem {
+  background-color: #a6f6ad;
+  transition: all linear 0.1s;
+  box-shadow: 0 1px 6px 0.5px #222;
+  width: 250px;
+}
+.cardItem:hover {
+  transform: scale(1.05);
+  background-color: #72bd78;
+  box-shadow: 3px 4px 8px 2px #222;
+}
