@@ -1,12 +1,10 @@
-import {
-  CHANGE_SEARCH_FIELD,
-} from "../Constants.action";
+import { CHANGE_SEARCH_FIELD } from "../Constants.action";
 
 const initialState = {
   searchField: ""
 };
 
-export const searchRobots = (state = initialState, action) => {
+const searchRobots = (state = initialState, action) => {
   switch (action.type) {
     case CHANGE_SEARCH_FIELD:
       /*  
@@ -20,3 +18,4 @@ export const searchRobots = (state = initialState, action) => {
   }
 };
 
+export default searchRobots;

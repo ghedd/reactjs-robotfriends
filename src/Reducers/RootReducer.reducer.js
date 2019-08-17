@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
-import { searchRobots } from "../Reducers/SearchReducer.reducer";
-import { requestRobots } from "../Reducers/RequestData.reducer";
+import searchRobots from "../Reducers/SearchReducer.reducer";
+import requestRobots from "../Reducers/RequestData.reducer";
 
 const rootReducer = combineReducers({ searchRobots, requestRobots });
 
