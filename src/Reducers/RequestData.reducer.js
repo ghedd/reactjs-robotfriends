@@ -10,7 +10,7 @@ const initialState = {
   error: ""
 };
 
-const requestRobots = (state = initialState, action) => {
+ const requestRobots = (state = initialState, action) => {
   switch (action.type) {
     case REQUEST_ROBOTS_PENDING:
       return { ...state, isPending: true };
@@ -22,5 +22,4 @@ const requestRobots = (state = initialState, action) => {
       return state;
   }
 };
-
 export default requestRobots;
