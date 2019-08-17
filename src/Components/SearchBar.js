@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 
 export default class SearchBar extends Component {
-  constructor(props) {
-    super(props);
+  // constructor(props) {
+  //   super(props);
 
-    this.state = {
-      keyword: ""
-    };
-  }
+  //   this.state = {
+  //     keyword: ""
+  //   };
+  // }
 
   render() {
     return (
@@ -17,7 +17,7 @@ export default class SearchBar extends Component {
             type="text"
             className="form-control"
             placeholder="Type a robot's name..."
-            onChange={this._onSearch}
+            onChange={this.props.onSearchChange}
           />
         </div>
       </div>
@@ -25,7 +25,7 @@ export default class SearchBar extends Component {
   }
 
   /* --------------- methods --------------- */
-  _onSearch = e => {
+/*   _onSearch = e => {
     this.setState(
       {
         keyword: e.target.value
@@ -34,5 +34,5 @@ export default class SearchBar extends Component {
         this.props.onSearchChange(this.state.keyword);
       }
     );
-  };
+  }; */
 }

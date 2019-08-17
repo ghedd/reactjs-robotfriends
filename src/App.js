@@ -1,6 +1,7 @@
 import React from "react";
-import ScreenView from "./ScreenView";
+import ScreenView from "./Containers/ScreenView";
 import "./App.css";
+
 function App() {
   return <ScreenView />;
 }
